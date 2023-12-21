@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fish
+  - Linie
+  - Capsule
+  - Cylinder
+  - Enemy
+  - Collect
   layers:
   - Default
   - TransparentFX
