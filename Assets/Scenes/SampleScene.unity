@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2356425588909462439, guid: 9dca3db7ef2697244afa1a2fa4b684c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.18
+      value: 2.14
       objectReference: {fileID: 0}
     - target: {fileID: 2356425588909462439, guid: 9dca3db7ef2697244afa1a2fa4b684c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -189,13 +189,13 @@ PrefabInstance:
       addedObject: {fileID: 563046104}
     - targetCorrespondingSourceObject: {fileID: 2356425588909462434, guid: 9dca3db7ef2697244afa1a2fa4b684c6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 563046103}
-    - targetCorrespondingSourceObject: {fileID: 2356425588909462434, guid: 9dca3db7ef2697244afa1a2fa4b684c6, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 563046102}
     - targetCorrespondingSourceObject: {fileID: 2356425588909462434, guid: 9dca3db7ef2697244afa1a2fa4b684c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 563046101}
+    - targetCorrespondingSourceObject: {fileID: 2356425588909462434, guid: 9dca3db7ef2697244afa1a2fa4b684c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 563046107}
   m_SourcePrefab: {fileID: 100100000, guid: 9dca3db7ef2697244afa1a2fa4b684c6, type: 3}
 --- !u!1 &111094743
 GameObject:
@@ -679,21 +679,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &563046103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563046089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4357d9e61b02dba439b2c9314a067902, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprungKraft: 2.5
-  punktA: {fileID: 2075174227}
-  punktB: {fileID: 357377733}
 --- !u!114 &563046104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,6 +694,19 @@ MonoBehaviour:
   anim: {fileID: 563046097}
   scoreText: {fileID: 680626384}
   RestartButton: {fileID: 1858644507}
+--- !u!114 &563046107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563046089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf5b3385d02fef429c33c96f14ecaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2.5
 --- !u!1 &680626382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,7 +1501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d2a7216da9440418b351b609278a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1362806790718221721, guid: f1b96641aa5e1fa41b0e4222820c450d, type: 3}
+  enemyPrefab: {fileID: 2024753498926064491, guid: d17079224d6974c43920e4a1d3e26fd3, type: 3}
   spawnInterval: 1.5
   minY: 2
   maxY: 6
