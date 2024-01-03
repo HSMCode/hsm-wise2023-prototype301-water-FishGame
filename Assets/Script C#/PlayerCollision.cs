@@ -13,20 +13,15 @@ public class PlayerCollision : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             // Spieler wird deaktiviert
+            playerMovement.isAlive = false;
+
             anim.SetTrigger("Tot");
-            Invoke("Stirbt", 2f);
         }
         else if (other.CompareTag("Collect"))
         {
             // Objekt mit dem Tag "Collect" wurde getroffen
             CollectObject(other.gameObject);
         }
-    }
-
-    void Stirbt()
-    {
-        gameObject.SetActive(false);
-        RestartButton.SetActive(true);
     }
 
     void CollectObject(GameObject collectible)

@@ -26,14 +26,14 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-     // (RE)STARTING THE GAME
+        Debug.Log(isAlive);
+        // (RE)STARTING THE GAME
 
         // if r is pressed and the player is dead
-        if (Input.GetKeyDown(KeyCode.R) && !isAlive)
+        if (Input.GetKeyDown(KeyCode.Space) && !isAlive)
         {
             // reload to scene to restart the game
-            SceneManager.LoadScene("Level_0");
+            SceneManager.LoadScene("Fish Game");
         }
         // if space is pressed and the game hasnt been started yet
         else if (Input.GetButtonDown("Jump") && !isStarted)
